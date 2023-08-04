@@ -32,17 +32,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 header('location:home.php');
                 exit;
             } else {
-                echo '<script>
-                alert("Error, Invalid credentials.");
-                window.history.back();
-                </script>';
-            exit;
+                $message = "Error, Invalid credentials.";
+                echo "<p>$message</p>";
+                header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
+                exit;
             }
         } else {
-            echo '<script>
-                alert("Error, Invalid credentials.");
-                window.history.back();
-            </script>';
+            $message = "Error, Invalid credentials.";
+            echo "<p>$message</p>";
+            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
             exit;
         }
     } else {
@@ -77,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div>
         <button type="submit" name="submit">Login</button><br><br>
         or a new user?
-        <button onclick="window.location.href = 'multiform.php';">Signup</button>
+        <button onclick="window.location.href = 'index.php';">Signup</button>
         </div>
     </form>
 </div>

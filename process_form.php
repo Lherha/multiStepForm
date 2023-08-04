@@ -33,11 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Validate first name using regular expression
         if (!preg_match("/^[a-zA-Z-' ]*$/", $first_name)) {
-            // $errors[] = "Only letters and white space allowed for First Name.";
-            echo '<script>
-                alert("Only letters and white space allowed for First Name.");
-                window.history.back();
-            </script>';
+            $message = "Only letters and white space allowed for First Name.";
+            echo "<div style='text-align: center; color: red;'><p>$message</p></div>";
+            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
             exit;
         }
     }
@@ -47,11 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Validate last name using regular expression
         if (!preg_match("/^[a-zA-Z-' ]*$/", $last_name)) {
-            // $errors[] = "Only letters and white space allowed for Last Name.";
-            echo '<script>
-                alert("Only letters and white space allowed for Last Name.");
-                window.history.back();
-            </script>';
+            $message = "Only letters and white space allowed for Last Name.";
+            echo "<div style='text-align: center; color: red;'><p>$message</p></div>";
+            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
             exit;
         }
     }
@@ -63,11 +59,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($email)) {
         $errors[] = "Email is required.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = "Invalid email format.";
+        $message = "Invalid email format.";
+        echo "<div style='text-align: center; color: red;'><p>$message</p></div>";
+        header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
+         exit;
     }
 
     if (empty($password)) {
         $errors[] = "Password is required.";
+    } else {
+        // Validate password strength
+        $uppercase = preg_match('@[A-Z]@', $password);
+        $lowercase = preg_match('@[a-z]@', $password);
+        $number    = preg_match('@[0-9]@', $password);
+        $specialChars = preg_match('@[^\w]@', $password);
+
+        if (!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8) {
+            $message = "Password must be at least 8 char=acters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.";
+            echo "<div style='text-align: center; color: red;'><p>$message</p></div>";
+            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
+            exit;
+        }
     }
 
     if (empty($address)) {
@@ -82,15 +94,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Check if the phone number matches the pattern
         if (!preg_match($pattern, $mobile_no)) {
-            // $errors[] = "Phone number is invalid.";
-            echo '<script>
-                alert("Phone number is invalid, only ten numbers acceptible.");
-                window.history.back();
-            </script>';
+            // $errors[] = "Phone number is invalid, only ten numbers acceptable.";
+            $message = "Mobile number is invalid, only ten numbers acceptable.";
+            echo "<div style='text-align: center; color: red;'><p>$message</p></div>";
+            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
             exit;
         }
     }
 
+    // Check if there are any errors
     if (count($errors) > 0) {
         // Display errors to the user
         foreach ($errors as $error) {
@@ -113,17 +125,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($email_result->num_rows > 0) {
             // Email already exists
-            echo '<script>
-                alert("Email already exists. Please use a different email.");
-                window.history.back();
-            </script>';
+            $message = "Email already exists. Please use a different email.";
+            echo "<div style='text-align: center; color: red;'><p>$message</p></div>";
+            header("Refresh: 3;url=" . $_SERVER['HTTP_REFERER']);
             exit;
         } elseif ($mobile_result->num_rows > 0) {
             // Mobile number already exists
-            echo '<script>
-                alert("Mobile number already exists. Please use a different number.");
-                window.history.back();
-            </script>';
+            $message = "Mobile number already exists. Please use a different number.";
+            echo "<div style='text-align: center; color: red;'><p>$message</p></div>";
+            header("Refresh: 3;url=" . $_SERVER['HTTP_REFERER']);
             exit;
         } else {
             // Hash the password for security

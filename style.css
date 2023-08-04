@@ -16,21 +16,24 @@ body {
 }
 
 .container {
-    width: 320px;
-    height: 350px;
+    width: 400px;
+    height: 420px;
     background-color: greenyellow;
     padding-top: 20px;
     border-radius: 10px;
 }
 
 .sub-title{
-    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .form-wrapper {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding-top: 40px;
+    padding-left: 55px;
     border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 .form-group {
@@ -59,4 +62,7 @@ button{
 
 .text-center{
     text-align: center;
+    color: indigo;
+    padding-bottom: 20px;
 }
+
