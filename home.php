@@ -52,7 +52,7 @@ session_start();
   </main>
 
   <div class="container">
-    <a href="logout.php" class="btn btn-primary mt-5">Logout</a>
+    <a href="logout.php" class="btn">Logout</a>
     </div>
 </br>
   
