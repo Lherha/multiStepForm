@@ -71,6 +71,9 @@
         <button onclick="window.location.href = 'login.php';">Login</button>
 
         </div>
+        <p class="homelink">
+        Go back to <a href="home.php">Homepage</a>
+        </p>
     </div>
 
     <script>document.addEventListener('DOMContentLoaded', function () {
