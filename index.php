@@ -71,7 +71,7 @@
         <button onclick="window.location.href = 'login.php';">Login</button>
 
         </div>
-        <p class="homelink">
+        <p style="padding-left: 10px; padding-top: 20px;">
         Go back to <a href="home.php">Homepage</a>
         </p>
     </div>
