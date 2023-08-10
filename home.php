@@ -31,14 +31,20 @@ session_start();
       <ul>
         <li><a href="home.php">Home</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="logout.php">Logout</a></li>
+        <?php
+        if (isset($_SESSION['email'])) {
+          echo '<li><a href="logout.php">Logout</a></li>';
+        } else {
+          echo '<li><a href="login.php">Login</a></li>';
+        }
+      ?>
       </ul>
     </nav>
   </header>
 
  
 <h1 class="text-center text-warning mt-5">Welcome
-        <?php echo $_SESSION['email']; ?>
+        <?php if(isset($_SESSION['email'])) {echo $_SESSION['email'];} ?>
     </h1>
   
   <main>
