@@ -60,7 +60,7 @@ session_start();
 </br>
   
   <footer>
-    <p>&copy; 2023 Lherha. All rights reserved.</p>
+  <p>&copy; 2023-<?php echo date("Y"); ?> Lherha. All rights reserved.</p>
   </footer>
 </body>
 </html>
