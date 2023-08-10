@@ -62,9 +62,5 @@ session_start();
   <footer>
     <p>&copy; 2023 Lherha. All rights reserved.</p>
   </footer>
-
-  <!-- <div class="container">
-    <a href="logout.php" class="btn">Logout</a>
-    </div> -->
 </body>
 </html>
