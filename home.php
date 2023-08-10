@@ -55,12 +55,12 @@ session_start();
       <p>We offer a platform where customers in any part of Nigeria can find and shop for all they need in one online store and that platform is the MyDealZone.</p>
     </section>
   </main>
-
+  <p class="services">Our Services</p>
   <div class="what_offer">
                 <section class="what">
                     <h2>What we do</h2><br/>
-                    <img class="about" src="images/about.jpg" width="200" height="200"/>
-                    <p><a href="index.html">Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna etlort pharetra neque nisi ac nunc.</a></p>
+                    <img class="about" src="images/contact.jpg" width="200" height="200"/>
+                    <p><a href="#">Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna etlort pharetra neque nisi ac nunc.</a></p>
                     <br/>
                     <p><span4>Vivamus est quam dapibus ullamcolot rperolty hoki. Hibh ullamcorper accufogy msan sem lectus ut sapien. Donecjoilih venenatis posuere eli a convallis.
                         Praesent quis orci eget diam viverra consequat. Fusce sagittis quam in pulvinar sollicitudin velit velit cursus nibh ullamcorper accumsan sem lectus ut sapien. 
@@ -70,7 +70,7 @@ session_start();
                         Morbi facilisis elit eu nisl blandit ac blandit enim faucibu.</span4>
                     </p>
                     <br/>
-                   <a href="about.html"><button>More</button></a>
+                   <a href="#"><button>More</button></a>
                 </section>
                 <br/><br/>
 
@@ -85,7 +85,7 @@ session_start();
                         </div>
                     </div>
                     <div class="text_right10">
-                    <p><a href="about.html">Huis posuere consectetur pellent</a></p>
+                    <p><a href="#">Huis posuere consectetur pellent</a></p>
                     <br/><br/>
                     <p><span4>Eed nisi turpis pellentesque at ultriceso in dapibus in magna. Nunc easi diamyu risulacerat ut scelerisque et suscipit.</span4></p></div></span7>
                     <br/>
@@ -99,7 +99,7 @@ session_start();
                     </div>
                 </div>
                     <div class="text_right10">
-                <p><a href="about.html">Luuis posuere consectetur pellente</a></p><br/><br/>
+                <p><a href="#">Luuis posuere consectetur pellente</a></p><br/><br/>
                     <p><span4>Ged nisi turpis pellentesque at ultricesyt in dapibus in magna. Ounc easi diamyu risulacerat ut scelerisque et suscipi.</span4></p></div></span7>
                     <br/>
                 </section>
@@ -112,7 +112,7 @@ session_start();
                             </div>
                         </div>
                         <div class="text_right10">
-                  <p><a href="about.html">Opuis posuere honsectetur pellentes</a></p><br/><br/>
+                  <p><a href="#">Opuis posuere honsectetur pellentes</a></p><br/><br/>
                   <p><span4>Koed nisi turpis, pellentesque at ultrkoty ices in dapibus in magna. Aunc easigoli diam risujo placerat ut scelerisque.</span4></p></div></span7>
                 </section>
                     </section>
