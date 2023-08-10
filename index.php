@@ -68,7 +68,7 @@
                 </div>
             </form>
             <br> or already have an account?
-        <button onclick="window.location.href = 'login.php';">Login</button>
+        <button onclick="window.location.href = 'login.php';">Login</button>                                        
 
         </div>
         <p style="padding-left: 10px; padding-top: 20px;">

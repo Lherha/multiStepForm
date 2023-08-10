@@ -56,6 +56,68 @@ session_start();
     </section>
   </main>
 
+  <div class="what_offer">
+                <section class="what">
+                    <h2>What we do</h2><br/>
+                    <img class="about" src="images/about.jpg" width="200" height="200"/>
+                    <p><a href="index.html">Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna etlort pharetra neque nisi ac nunc.</a></p>
+                    <br/>
+                    <p><span4>Vivamus est quam dapibus ullamcolot rperolty hoki. Hibh ullamcorper accufogy msan sem lectus ut sapien. Donecjoilih venenatis posuere eli a convallis.
+                        Praesent quis orci eget diam viverra consequat. Fusce sagittis quam in pulvinar sollicitudin velit velit cursus nibh ullamcorper accumsan sem lectus ut sapien. 
+                        Donec venenatis posuere velit aty convallis neque ullamcorper quis. Integer posuere ipsum eu risus sollicitudin nec varius eratylo luctus. 
+                        Fusce fringilla erat ac urna pe llentesque congue. Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna et pharetra neque nisi ac nunc. 
+                        Vivamus est quam dapibuslok. ..ullamco rper imperdiet nec euismod ut arcu. Nulla facilisi. Etiam mauris lorem pulvinar vel con sequat ut pretium ac erat. 
+                        Morbi facilisis elit eu nisl blandit ac blandit enim faucibu.</span4>
+                    </p>
+                    <br/>
+                   <a href="about.html"><button>More</button></a>
+                </section>
+                <br/><br/>
+
+                <section class="offer">
+                    <h2>What we offer</h2> <br/>
+            
+                <section>
+                    <span7>
+                    <div class="flexible1">
+                        <div>
+                            <p>1</p>
+                        </div>
+                    </div>
+                    <div class="text_right10">
+                    <p><a href="about.html">Huis posuere consectetur pellent</a></p>
+                    <br/><br/>
+                    <p><span4>Eed nisi turpis pellentesque at ultriceso in dapibus in magna. Nunc easi diamyu risulacerat ut scelerisque et suscipit.</span4></p></div></span7>
+                    <br/>
+                </section>
+            
+                <section>
+                    <span7>
+                <div class="flexible2">
+                    <div>
+                        <p>2</p>
+                    </div>
+                </div>
+                    <div class="text_right10">
+                <p><a href="about.html">Luuis posuere consectetur pellente</a></p><br/><br/>
+                    <p><span4>Ged nisi turpis pellentesque at ultricesyt in dapibus in magna. Ounc easi diamyu risulacerat ut scelerisque et suscipi.</span4></p></div></span7>
+                    <br/>
+                </section>
+            
+                    <section>
+                        <span7>
+                            <div class="flexible3">
+                            <div>
+                                <p>3</p>
+                            </div>
+                        </div>
+                        <div class="text_right10">
+                  <p><a href="about.html">Opuis posuere honsectetur pellentes</a></p><br/><br/>
+                  <p><span4>Koed nisi turpis, pellentesque at ultrkoty ices in dapibus in magna. Aunc easigoli diam risujo placerat ut scelerisque.</span4></p></div></span7>
+                </section>
+                    </section>
+            </div>
+
   
 </br>
   
