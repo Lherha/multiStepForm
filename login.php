@@ -79,6 +79,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </form>
 </div>
+<p class="homelink">
+Go back to <a href="home.php">Homepage</a>
+</p>
 </div>
 </body>
 </html>
