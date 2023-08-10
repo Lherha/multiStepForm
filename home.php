@@ -44,7 +44,7 @@ session_start();
   <main>
     <section class="post">
       <h2>New Blog Post Title</h2>
-      <p>Posted on: August 9, 2023</p>
+      <p>Posted on: August 10, 2023</p>
 </br>
       <p>We offer a platform where customers in any part of Nigeria can find and shop for all they need in one online store and that platform is the MyDealZone.</p>
     </section>
