@@ -32,7 +32,7 @@ session_start();
         <li><a href="home.php">Home</a></li>
         <li><a href="#what_offer">About Us</a></li>
         <li><a href="#recommend_services">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#contacts">Contact Us</a></li>
         <?php
         if (isset($_SESSION['email'])) {
           echo '<li><a href="logout.php">Logout</a></li>';
@@ -279,7 +279,7 @@ session_start();
 
             </div>
 
-            <div class="contacts">
+            <div class="contacts" id="contacts">
             <section>
                 <h2>Contact Info</h2>
                 <div class="map">
