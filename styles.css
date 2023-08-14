@@ -433,3 +433,57 @@ span8 .flexible3  div {
   outline: 0;
   border-color: rgb(119, 118, 118);
 }
+
+.form-control small{
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small{
+  visibility: visible;
+}
+
+.form-control textarea{
+  border: 2px solid rgb(190, 188, 188);
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control textarea:focus{
+  outline: 0;
+  border-color: rgb(119, 118, 118);
+}
+
+.send:active {
+  background-color: #4ab94e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+ textarea{
+  height: 350px;
+ }
+
+ input{
+  height: 30px;
+ }
+
+
+ #cautionIcon{
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  left: 380px;
+  color: var(--error-color);
+  visibility: hidden;
+ }
+
+ .form-control.error #cautionIcon{
+  visibility: visible;
+}
