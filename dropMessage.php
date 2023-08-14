@@ -5,37 +5,30 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $phone = sanitizeInput($_POST["phone"]);
     $message = sanitizeInput($_POST["letter"]);
 
+    $errorMessage = "";
+
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {
-        echo "Please fill in all required fields.";
-        exit;
+        $errorMessage = "Please fill in all required fields.";
+    } else if (!preg_match("/^[a-zA-Z\s]+$/", $name)) {
+        $errorMessage = "Invalid name. Please provide a valid name with only letters and whitespace.";
+    } else if (!preg_match("/^\d{10}$/", $phone)) {
+        $errorMessage = "Invalid phone number. Please provide a 10-digit phone number.";
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errorMessage = "Invalid email address. Please provide a valid email.";
+    } else {
+        $to = "mueezlherha@gmail.com"; 
+        $subject = "Contact Form Submission from $name";
+
+        $headers = "From: $email" . "\r\n" .
+            "Reply-To: $email" . "\r\n" .
+            "X-Mailer: PHP/" . phpversion();
+
+        if (mail($to, $subject, $message, $headers)) {
+            $successMessage = "Email sent successfully!";
+        } else {
+            $errorMessage = "Failed to send email. Please try again later.";
+        }
     }
-
-    if (!preg_match("/^[a-zA-Z\s]+$/", $name)) {
-        echo "Invalid name. Please provide a valid name with only letters and whitespace.";
-        exit;
-    }
-
-    if (!preg_match("/^\d{10}$/", $phone)) {
-        echo "Invalid phone number. Please provide a 10-digit phone number.";
-        exit;
-    }
-    
-    $phone = preg_replace("/[^0-9]/", "", $phone);
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email address. Please provide a valid email.";
-        exit;
-    }
-
-    $to = "mueezlherha@gmail.com"; 
-    $subject = "Contact Form Submission from $name";
-
-    $headers = "From: $email" . "\r\n" .
-        "Reply-To: $email" . "\r\n" .
-        "X-Mailer: PHP/" . phpversion();
-
-    mail($to, $subject, $message, $headers);
-    echo "Email sent successfully!";
 }
 
 function sanitizeInput($input) {
@@ -45,3 +38,21 @@ function sanitizeInput($input) {
     return $input;
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form Response</title>
+</head>
+<body>
+    <?php
+    if (isset($errorMessage)) {
+        echo '<p style="color: red;">' . $errorMessage . '</p>';
+    }
+    
+    if (isset($successMessage)) {
+        echo '<p style="color: green;">' . $successMessage . '</p>';
+    }
+    ?>
+</body>
+</html>
