@@ -32,7 +32,7 @@ session_start();
         <li><a href="home.php">Home</a></li>
         <li><a href="#what_offer">About Us</a></li>
         <li><a href="#recommend_services">Services</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
         <?php
         if (isset($_SESSION['email'])) {
           echo '<li><a href="logout.php">Logout</a></li>';
