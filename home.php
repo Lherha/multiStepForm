@@ -344,7 +344,7 @@ session_start();
 
     </div>
         </section>
-
+            </div>
 
   <footer>
   <p>&copy; 2023-<?php echo date("Y"); ?> Lherha. All rights reserved.</p>

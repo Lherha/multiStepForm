@@ -376,7 +376,7 @@ span8 .flexible3  div {
  }
 
 
- 
+
  /* Contact US */
 
  .contacts{
@@ -386,4 +386,17 @@ span8 .flexible3  div {
   padding-right: 130px;
   padding-top: 90px;
   padding-bottom: 80px;
+}
+
+.map{
+  padding-right: 120px;
+  padding-bottom: 30px;
+}
+
+.contacts h2{
+  padding-bottom: 40px;
+  color: rgb(106, 130, 211);
+  font-size: 30px;
+  font-family: cursive;
+  font-style: italic;
 }
