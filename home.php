@@ -285,9 +285,9 @@ session_start();
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15858.802879244815!2d3.4396305480712903!3d6.43247707635179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssaltingstein!5e0!3m2!1sen!2sng!4v1680535638652!5m2!1sen!2sng" width="470" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <p>PetClub Ltd</p>
-                <p>8901 Marmora Road</p>
-                <p>Glasgow, D04 89GR.</p>
+                <p>Lherha Ltd</p>
+                <p>17C Moshood Olugbani Street</p>
+                <p>Lagos, Nigeria.</p>
                 <br/>
                 <section class="jams">
                 <section class="=jam">
@@ -310,7 +310,7 @@ session_start();
 
         <section>
             <div class="contact_container">
-            <form id="myForm" class="myForm" action="pet_club.php" method="post">
+            <form id="myForm" class="myForm" action="dropMessage.php" method="post">
              <h2>Contact Form</h2>
                 <div class="form-control">
                 <input id="nameBox" type="text" name="name" size="30" placeholder="Name:"/>
