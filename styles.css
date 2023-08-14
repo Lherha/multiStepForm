@@ -400,3 +400,12 @@ span8 .flexible3  div {
   font-family: cursive;
   font-style: italic;
 }
+
+.jams{
+  color: rgb(148, 146, 143);
+  display: flex;
+}
+
+.jamss{
+  padding-left: 25px;
+}
