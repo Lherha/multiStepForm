@@ -25,8 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if (mail($to, $subject, $message, $headers)) {
             $successMessage = "Email sent successfully!";
+            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
+            exit;
         } else {
             $errorMessage = "Failed to send email. Please try again later.";
+            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
+            exit;
         }
     }
 }
@@ -43,6 +47,12 @@ function sanitizeInput($input) {
 <html>
 <head>
     <title>Contact Form Response</title>
+    
+    <?php
+    if (isset($errorMessage) || isset($successMessage)) {
+        echo '<meta http-equiv="refresh" content="3;url=home.php">';
+    }
+    ?>
 </head>
 <body>
     <?php
@@ -56,3 +66,4 @@ function sanitizeInput($input) {
     ?>
 </body>
 </html>
+
