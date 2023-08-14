@@ -25,12 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if (mail($to, $subject, $message, $headers)) {
             $successMessage = "Email sent successfully!";
-            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
-            exit;
         } else {
             $errorMessage = "Failed to send email. Please try again later.";
-            header("Refresh: 3;url=".$_SERVER['HTTP_REFERER']);
-            exit;
         }
     }
 }
