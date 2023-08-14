@@ -460,6 +460,11 @@ span8 .flexible3  div {
   border-color: rgb(119, 118, 118);
 }
 
+.send {
+  background-color: #4ab94e;
+  color: white;
+}
+
 .send:active {
   background-color: #4ab94e;
   box-shadow: 0 5px #666;
