@@ -279,6 +279,72 @@ session_start();
 
             </div>
 
+            <div class="contacts">
+            <section>
+                <h2>Contact Info</h2>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15858.802879244815!2d3.4396305480712903!3d6.43247707635179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssaltingstein!5e0!3m2!1sen!2sng!4v1680535638652!5m2!1sen!2sng" width="470" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p>PetClub Ltd</p>
+                <p>8901 Marmora Road</p>
+                <p>Glasgow, D04 89GR.</p>
+                <br/>
+                <section class="jams">
+                <section class="=jam">
+                    <p>Freephone:</p>
+                    <p>Telephone:</p>
+                    <p>FAX:</p>
+                </section>
+                <section class="jamss">
+                    
+    
+                    <P>+1 800 559 6580</P>
+                    <p>+1 800 603 6035</p>
+                    <p>+1 800 889 9898</p>
+                </section>
+                
+            </section>
+            </section>
+            <br/>
+
+
+        <section>
+            <div class="contact_container">
+            <form id="myForm" class="myForm" action="pet_club.php" method="post">
+             <h2>Contact Form</h2>
+                <div class="form-control">
+                <input id="nameBox" type="text" name="name" size="30" placeholder="Name:"/>
+                <small>Error Message</small>
+                <div id="cautionIcon"><ion-icon name="backspace"></ion-icon></div>
+            </div>
+                
+            <div class="form-control">
+                <input id="eMailBox" type="email" name="email" size="30" placeholder="E-mail:"/>
+                <small>Error Message</small>
+                <div id="cautionIcon"><ion-icon name="backspace"></ion-icon></div>
+            </div> 
+                
+            <div class="form-control">
+                <input id="phoneBox" type="text" name="phone" size="30" placeholder="Phone:"/>
+                <small>Error Message</small>
+                <div id="cautionIcon"><ion-icon name="backspace"></ion-icon></div>
+            </div>
+                
+            <div class="form-control">
+                <textarea id="textBox" name="letter" row="6" cols="60"></textarea>
+                <small>Error Message</small>
+                <div id="cautionIcon"><ion-icon name="backspace"></ion-icon></div>
+            </div>
+                
+
+                <button type="submit" class="send">Send</button>
+
+                
+        </form>
+
+    </div>
+        </section>
+
 
   <footer>
   <p>&copy; 2023-<?php echo date("Y"); ?> Lherha. All rights reserved.</p>
