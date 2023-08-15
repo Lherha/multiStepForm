@@ -181,23 +181,56 @@ session_start();
                 <div class="staff_gallery">
 
                     <section class="mark">
+
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='staff1'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
                         <img src="images/mark.jpg" width="140" height="100"/>
                         <div class="staff_mark">
-                            <h4><a href="contacts.html">Mark Kromstein</a></h4>
-                            <p><span4>Kaes quis orci eget diam viverralopr conequat. Busce sagit quam ihui hyhy kolo opirlo pulvinarhjkj.</span4></p>
+                            <h4><a href="contacts.html"></a></h4>
+                            <p><span4></span4></p>
                         </div>
                     </section>
 
                     <section class="kelly">
+
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='staff2'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
                         <img src="images/kelly.jpg" width="140" height="100"/>
                         <div class="staff_mark">
-                            <h4><a href="contacts.html">Kelly Grosh</a></h4>
-                            <p><span4>Kaes quis orci eget diam viverralopr conequat. Busce sagit quam ihui hyhy kolo opirlo pulvinarhjkj.</span4></p>
+                            <h4><a href="contacts.html"></a></h4>
+                            <p><span4></span4></p>
                         </div>
                     </section>
 
 
                     <section class="ann">
+
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='staff3'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
                         <img src="images/ann.jpg" width="140" height="100"/>
                         <div class="staff_mark">
                             <h4><a href="contacts.html">Ann Priston</a></h4>
