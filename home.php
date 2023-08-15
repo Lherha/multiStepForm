@@ -176,7 +176,7 @@ session_start();
                     
             </div>
 
-            <section class="footer">
+            <section class="staff">
                 <h3>Our Staff</h3>
                 <div class="footer_gallery">
 
