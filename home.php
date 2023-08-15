@@ -45,8 +45,7 @@ session_start();
     </nav>
   </header>
 
-  <?php
-
+    <?php
     $sql = "Select * from `posts` WHERE post_name='hero_section'";
     $result=mysqli_query($conn,$sql);
     if($result){
@@ -74,8 +73,7 @@ session_start();
   </main>
   </div>
   
-  <?php
-
+    <?php
     $sql = "Select * from `posts` WHERE post_name='about_us1'";
     $result=mysqli_query($conn,$sql);
     if($result){
@@ -250,7 +248,6 @@ session_start();
                     <img class="services2" src="images/pic4.jpg" width="200" height="200" alt="a cat"/>
 
                     <?php
-
                     $sql = "Select * from `posts` WHERE post_name='recommend1'";
                     $result=mysqli_query($conn,$sql);
                     if($result){
@@ -272,7 +269,6 @@ session_start();
                     <img class="services2" src="images/pic5.jpg" width="200" height="200" alt="a dog"/>
 
                     <?php
-
                     $sql = "Select * from `posts` WHERE post_name='recommend2'";
                     $result=mysqli_query($conn,$sql);
                     if($result){
@@ -296,6 +292,17 @@ session_start();
                     <h2>Main Services</h2> <br/>
 
                     <section>
+
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='service1'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
                         <span8>
                         <div class="flexible1">
                             <div>
@@ -303,13 +310,24 @@ session_start();
                             </div>
                         </div>
                         <div class="text_right10">
-                        <p><a href="#recommend_services">Huis posuere consectetur pellent</a></p>
+                        <p><a href="#recommend_services"><?php echo $post_title; ?></a></p>
                         <br/><br/>
-                        <p><span4>Eed nisi turpis pellentesque at ultriceso in dapibus in magna. Nunc easi diamyu risulacerat ut scelerisque et suscipit.</span4></p></div></span8>
+                        <p><span4><?php echo $post_content; ?></span4></p></div></span8>
                         <br/>
                     </section>
                 
                     <section>
+
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='service2'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
                         <span8>
                     <div class="flexible2">
                         <div>
@@ -317,12 +335,23 @@ session_start();
                         </div>
                     </div>
                         <div class="text_right10">
-                    <p><a href="#recommend_services">Luuis posuere consectetur pellente</a></p><br/>
-                        <p><span4>Ged nisi turpis pellentesque at ultricesyt in dapibus in magna. Ounc easi diamyu risulacerat ut scelerisque et suscipi.</span4></p></div></span8>
+                    <p><a href="#recommend_services"><?php echo $post_title; ?></a></p><br/>
+                        <p><span4><?php echo $post_content; ?></span4></p></div></span8>
                         <br/>
                     </section>
                 
                         <section>
+
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='service3'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
                             <span8>
                                 <div class="flexible3">
                                 <div>
@@ -330,11 +359,22 @@ session_start();
                                 </div>
                             </div>
                             <div class="text_right10">
-                      <p><a href="#recommend_services">Opuis posuere honsectetur pellentes</a></p><br/>
-                      <p><span4>Koed nisi turpis, pellentesque at ultrkoty ices in dapibus in magna. Aunc easigoli diam risujo placerat ut scelerisque.</span4></p></div></span8>
+                      <p><a href="#recommend_services"><?php echo $post_title; ?></a></p><br/>
+                      <p><span4><?php echo $post_content; ?></span4></p></div></span8>
                     </section>
 
                     <section>
+
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='service4'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
                         <span8>
                     <div class="flexible2">
                         <div>
@@ -342,12 +382,21 @@ session_start();
                         </div>
                     </div>
                         <div class="text_right10">
-                    <p><a href="#recommend_services">Luuis posuere consectetur pellente</a></p><br/>
-                        <p><span4>Ged nisi turpis pellentesque at ultricesyt in dapibus in magna. Ounc easi diamyu risulacerat ut scelerisque et suscipi.</span4></p></div></span8>
+                    <p><a href="#recommend_services"><?php echo $post_title; ?></a></p><br/>
+                        <p><span4><?php echo $post_content; ?></span4></p></div></span8>
                         <br/>
                     </section>
 
                     <section>
+                    <?php
+                    $sql = "Select * from `posts` WHERE post_name='service5'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
                         <span8>
                             <div class="flexible3">
                             <div>
@@ -355,11 +404,20 @@ session_start();
                             </div>
                         </div>
                         <div class="text_right10">
-                  <p><a href="#recommend_services">Opuis posuere honsectetur pellentes</a></p><br/>
-                  <p><span4>Koed nisi turpis, pellentesque at ultrkoty ices in dapibus in magna. Aunc easigoli diam risujo placerat ut scelerisque.</span4></p></div></span8>
+                  <p><a href="#recommend_services"><?php echo $post_title; ?></a></p><br/>
+                  <p><span4><?php echo $post_content; ?></span4></p></div></span8>
                 </section>
 
                 <section>
+                <?php
+                    $sql = "Select * from `posts` WHERE post_name='service6'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
                     <span8>
                 <div class="flexible2">
                     <div>
@@ -367,8 +425,8 @@ session_start();
                     </div>
                 </div>
                     <div class="text_right10">
-                <p><a href="#recommend_services">Luuis posuere consectetur pellente</a></p><br/>
-                    <p><span4>Ged nisi turpis pellentesque at ultricesyt in dapibus in magna. Ounc easi diamyu risulacerat ut scelerisque et suscipi.</span4></p></div></span8>
+                <p><a href="#recommend_services"><?php echo $post_title; ?></a></p><br/>
+                    <p><span4><?php echo $post_content; ?></span4></p></div></span8>
                     <br/>
                 </section>
                     
