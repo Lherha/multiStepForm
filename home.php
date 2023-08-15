@@ -248,15 +248,21 @@ session_start();
                 <section>
                     <h2>We Recommend</h2>
                     <img class="services2" src="images/pic4.jpg" width="200" height="200" alt="a cat"/>
-                    <p><a href="#recommend_services">Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna etlort pharetra neque nisi ac nunc.</a></p>
+
+                    <?php
+
+                    $sql = "Select * from `posts` WHERE post_name='recommend1'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+
+                    <p><a href="#recommend_services"><?php echo $post_title; ?></a></p>
                     <br/>
-                    <p><span4>Vivamus est quam dapibus ullamcolot rperolty hoki. Hibh ullamcorper accufogy msan sem lectus ut sapien. Donecjoilih venenatis posuere eli a convallis.
-                        Praesent quis orci eget diam viverra consequat. Fusce sagittis quam in pulvinar sollicitudin velit velit cursus nibh ullamcorper accumsan sem lectus ut sapien. 
-                        Donec venenatis posuere velit aty convallis neque ullamcorper quis. 
-                        Integer posuere ipsum eu risus sollicitudin nec varius eratylo luctus. Fusce fringilla erat ac urna pe llentesque congue. 
-                        Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna et pharetra neque nisi ac nunc. 
-                        Vivamus est quam dapibuslok. ..ullamco rper imperdiet nec euismod ut arcu. Nulla facilisi. Etiam mauris lorem pulvinar vel con sequat ut pretium ac erat. 
-                        Morbi facilisis elit eu nisl blandit ac blandit enim faucibu.</span4></p>
+                    <p><span4><?php echo $post_content; ?></span4></p>
                         <br/>
                         <a href="#recommend_services"><button>More</button></a>
                 </section>
@@ -264,13 +270,21 @@ session_start();
                 <br/><br/><br/><br/>
                 <section>
                     <img class="services2" src="images/pic5.jpg" width="200" height="200" alt="a dog"/>
-                    <p><a href="#recommend_services">Plunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna etlort pharetra neque nisi ac nuny.</a></p>
+
+                    <?php
+
+                    $sql = "Select * from `posts` WHERE post_name='recommend2'";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    $post_title = $row['post_title'];
+                    $post_content = $row['post_content'];
+                    }}
+                    ?>
+                
+                    <p><a href="#recommend_services"><?php echo $post_title; ?></a></p>
                     <br/>
-                    <p><span4>Wivamus est quam dapibus ullamcolot rperolty hoki. Hibh ullamcorper accufogy msan sem lectus ut sapien. Monecjoilih venenatis posuere eli a convally.
-                        Traesent quis orci eget diam viverra consequat. Fusce sagittis quam in pulvinar sollicitudin velit velit cursus nibh ullamcorper accumsan sem lectus ut sapien. 
-                        Donec venenatis posuere velit aty convallis neque ullamcorper quis. Integer posuere ipsum eu risus sollicitudin nec varius eratylo luctus. Kusce fringilla erat ac urna pe llentesque congue. 
-                        Ounc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna et pharetra neque nisi ac nunc. 
-                        Vivamus est quam dapibuslok.</span4></p>
+                    <p><span4><?php echo $post_content; ?></span4></p>
                         <br/>
                         <a href="#recommend_services"><button>More</button></a>
                 </section>
