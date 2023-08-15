@@ -178,11 +178,11 @@ session_start();
 
             <section class="staff">
                 <h3>Our Staff</h3>
-                <div class="footer_gallery">
+                <div class="staff_gallery">
 
                     <section class="mark">
                         <img src="images/mark.jpg" width="140" height="100"/>
-                        <div class="footer_mark">
+                        <div class="staff_mark">
                             <h4><a href="contacts.html">Mark Kromstein</a></h4>
                             <p><span4>Kaes quis orci eget diam viverralopr conequat. Busce sagit quam ihui hyhy kolo opirlo pulvinarhjkj.</span4></p>
                         </div>
@@ -190,7 +190,7 @@ session_start();
 
                     <section class="kelly">
                         <img src="images/kelly.jpg" width="140" height="100"/>
-                        <div class="footer_mark">
+                        <div class="staff_mark">
                             <h4><a href="contacts.html">Kelly Grosh</a></h4>
                             <p><span4>Kaes quis orci eget diam viverralopr conequat. Busce sagit quam ihui hyhy kolo opirlo pulvinarhjkj.</span4></p>
                         </div>
@@ -199,7 +199,7 @@ session_start();
 
                     <section class="ann">
                         <img src="images/ann.jpg" width="140" height="100"/>
-                        <div class="footer_mark">
+                        <div class="staff_mark">
                             <h4><a href="contacts.html">Ann Priston</a></h4>
                             <p><span4>Kaes quis orci eget diam viverralopr conequat. Busce sagit quam ihui hyhy kolo opirlo pulvinarhjkj.</span4></p>
                         </div>
