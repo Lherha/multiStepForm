@@ -103,6 +103,16 @@ session_start();
                     <h2>What we offer</h2> <br/>
             
                 <section>
+
+                <?php
+                $sql = "Select * from `posts` WHERE post_name='flexible1'";
+                $result=mysqli_query($conn,$sql);
+                if($result){
+                while ($row = mysqli_fetch_assoc($result)) {
+                $post_title = $row['post_title'];
+                $post_content = $row['post_content'];
+                }}
+                ?>
                     <span7>
                     <div class="flexible1">
                         <div>
