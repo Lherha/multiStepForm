@@ -382,8 +382,7 @@ span8 .flexible3  div {
  .contacts{
   display: flex;
   margin-top: none;
-  padding-left: 150px;
-  padding-right: 130px;
+  padding-left: 250px;
   padding-top: 90px;
   padding-bottom: 80px;
 }
