@@ -1,18 +1,7 @@
 <?php
 
-// Database configuration
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "multiform";
+include 'db.php';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 // Check if the form is submitted (POST request)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
