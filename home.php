@@ -360,7 +360,7 @@ session_start();
                             </div>
                             <div class="text_right10">
                       <p><a href="#recommend_services"><?php echo $post_title; ?></a></p><br/>
-                      <p><span4><?php echo $post_content; ?></span4></p></div></span8>
+                      <p><span4><?php echo $post_content; ?></span4></p></div></span8><br/>
                     </section>
 
                     <section>
