@@ -120,13 +120,24 @@ session_start();
                         </div>
                     </div>
                     <div class="text_right10">
-                    <p><a href="#"></a></p>
+                    <p><a href="#"><?php echo $post_title; ?></a></p>
                     <br/><br/>
-                    <p><span4></span4></p></div></span7>
+                    <p><span4><?php echo $post_content; ?></span4></p></div></span7>
                     <br/>
                 </section>
             
                 <section>
+
+                <?php
+                $sql = "Select * from `posts` WHERE post_name='flexible2'";
+                $result=mysqli_query($conn,$sql);
+                if($result){
+                while ($row = mysqli_fetch_assoc($result)) {
+                $post_title = $row['post_title'];
+                $post_content = $row['post_content'];
+                }}
+                ?>
+
                     <span7>
                 <div class="flexible2">
                     <div>
@@ -134,8 +145,8 @@ session_start();
                     </div>
                 </div>
                     <div class="text_right10">
-                <p><a href="#">Luuis posuere consectetur pellente</a></p><br/><br/>
-                    <p><span4>Ged nisi turpis pellentesque at ultricesyt in dapibus in magna. Ounc easi diamyu risulacerat ut scelerisque et suscipi.</span4></p></div></span7>
+                <p><a href="#"></a><?php echo $post_title; ?></p><br/><br/>
+                    <p><span4><?php echo $post_content; ?></span4></p></div></span7>
                     <br/>
                 </section>
             
