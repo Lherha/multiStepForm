@@ -233,8 +233,8 @@ session_start();
 
                         <img src="images/ann.jpg" width="140" height="100"/>
                         <div class="staff_mark">
-                            <h4><a href="contacts.html">Ann Priston</a></h4>
-                            <p><span4>Kaes quis orci eget diam viverralopr conequat. Busce sagit quam ihui hyhy kolo opirlo pulvinarhjkj.</span4></p>
+                            <h4><a href="contacts.html"></a></h4>
+                            <p><span4></span4></p>
                         </div>
                     </section>
                     </section>
