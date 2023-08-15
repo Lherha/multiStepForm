@@ -83,21 +83,16 @@ session_start();
     $post_title = $row['post_title'];
     $post_content = $row['post_content'];
     }}
-?>
+    ?>
 
   <div class="what_offer" id="what_offer">
                 <section class="what">
                 <p class="services" id="services">About Us</p>
                     <h2>What we do</h2><br/>
                     <img class="about" src="images/contact.jpg" width="200" height="200"/>
-                    <p><a href="#what_offer">Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna etlort pharetra neque nisi ac nunc.</a></p>
+                    <p><a href="#what_offer"><?php echo $post_title; ?></a></p>
                     <br/>
-                    <p><span4>Vivamus est quam dapibus ullamcolot rperolty hoki. Hibh ullamcorper accufogy msan sem lectus ut sapien. Donecjoilih venenatis posuere eli a convallis.
-                        Praesent quis orci eget diam viverra consequat. Fusce sagittis quam in pulvinar sollicitudin velit velit cursus nibh ullamcorper accumsan sem lectus ut sapien. 
-                        Donec venenatis posuere velit aty convallis neque ullamcorper quis. Integer posuere ipsum eu risus sollicitudin nec varius eratylo luctus. 
-                        Fusce fringilla erat ac urna pe llentesque congue. Nunc fringilla diam sit amet adipi scing bibendum turpis velit feugiat urna et pharetra neque nisi ac nunc. 
-                        Vivamus est quam dapibuslok. ..ullamco rper imperdiet nec euismod ut arcu. Nulla facilisi. Etiam mauris lorem pulvinar vel con sequat ut pretium ac erat. 
-                        Morbi facilisis elit eu nisl blandit ac blandit enim faucibu.</span4>
+                    <p><span4><?php echo $post_content; ?></span4>
                     </p>
                     <br/>
                    <a href="#what_offer"><button>More</button></a>
@@ -115,9 +110,9 @@ session_start();
                         </div>
                     </div>
                     <div class="text_right10">
-                    <p><a href="#">Huis posuere consectetur pellent</a></p>
+                    <p><a href="#"></a></p>
                     <br/><br/>
-                    <p><span4>Eed nisi turpis pellentesque at ultriceso in dapibus in magna. Nunc easi diamyu risulacerat ut scelerisque et suscipit.</span4></p></div></span7>
+                    <p><span4></span4></p></div></span7>
                     <br/>
                 </section>
             
