@@ -194,8 +194,8 @@ session_start();
 
                         <img src="images/mark.jpg" width="140" height="100"/>
                         <div class="staff_mark">
-                            <h4><a href="contacts.html"></a></h4>
-                            <p><span4></span4></p>
+                            <h4><a href="contacts.html"><?php echo $post_title; ?></a></h4>
+                            <p><span4><?php echo $post_content; ?></span4></p>
                         </div>
                     </section>
 
